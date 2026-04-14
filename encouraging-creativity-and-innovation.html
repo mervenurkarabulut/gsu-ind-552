@@ -527,14 +527,6 @@ function showResults() {
   const pct = Math.round((correct / Qs.length) * 100);
 
   document.getElementById('res-score').textContent = correct;
-  document.getElementById('res-title').textContent =
-    pct >= 80 ? 'Harika bir başlangıç!' :
-    pct >= 60 ? 'İyi bir ön bilgi!' :
-                'Endişelenmeyin!';
-  document.getElementById('res-msg').textContent =
-    pct >= 80 ? 'Yaratıcılık ve inovasyon kavramlarına dair güçlü bir ön sezgiye sahipsiniz. Bölümü okuduktan sonra tekrar deneyin.' :
-    pct >= 60 ? 'Bazı kavramları zaten sezgisel olarak biliyorsunuz. Bu bölüm boşlukları dolduracak.' :
-                'Bu bölümü okuduktan sonra büyük bir fark göreceksiniz. Ön bilginiz önemli değil — öğrenmek için buradasınız!';
 
   let html = '';
   Qs.forEach((q, i) => {
